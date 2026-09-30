@@ -1,0 +1,94 @@
+{
+  "name": "Selo Magna",
+  "fullName": "Selo Magna — Solução Estratégica em Liderança e Organização Saudável",
+  "legalName": "Selo Magna Solução Estratégica em Liderança e Organização Saudável Ltda",
+  "cnpj": "00.000.000/0001-00",
+  "tagline": "Gestão estratégica de riscos psicossociais",
+  "acronym": [
+    {
+      "letter": "S",
+      "word": "Solução"
+    },
+    {
+      "letter": "E",
+      "word": "Estratégica em"
+    },
+    {
+      "letter": "L",
+      "word": "Liderança e"
+    },
+    {
+      "letter": "O",
+      "word": "Organização Saudável"
+    }
+  ],
+  "magnaMeaning": "Magna vem do latim e significa “grande”, “maior”, como em Carta Magna e magna cum laude, a mais alta distinção. É o nosso compromisso: levar cada cliente ao mais alto padrão de saúde organizacional — e, quando fizer sentido, aos selos e certificações que comprovam isso.",
+  "description": "A Selo Magna ajuda médias e grandes empresas a diagnosticar, monitorar e reduzir os riscos psicossociais que consomem resultados: burnout, turnover, absenteísmo, engajamento e clima. Adequação à NR-1 com PGR auditável.",
+  "contact": {
+    "whatsapp": "5511900000000",
+    "whatsappDisplay": "(11) 90000-0000",
+    "whatsappMessage": "Olá! Vim pelo site da Selo Magna e gostaria de falar com um especialista.",
+    "email": "contato@selomagna.com.br",
+    "phoneDisplay": "(11) 90000-0000",
+    "address": {
+      "street": "Av. Paulista, 1000 — Bela Vista",
+      "city": "São Paulo",
+      "state": "SP",
+      "zip": "01310-100",
+      "country": "BR"
+    },
+    "mapsQuery": "Av. Paulista, 1000, São Paulo - SP",
+    "hours": "Segunda a sexta, 9h às 18h",
+    "serviceArea": "Atendimento presencial em São Paulo e online em todo o Brasil"
+  },
+  "social": {
+    "linkedin": "https://www.linkedin.com/company/selo-magna",
+    "instagram": "https://www.instagram.com/selomagna"
+  },
+  "mission": "Auxiliar empresas a diagnosticar, monitorar e melhorar a saúde psicossocial dos colaboradores por meio de indicadores, avaliações especializadas e planos de ação personalizados.",
+  "vision": "Ser a consultoria de referência em soluções integradas de liderança e organização saudável, reconhecida pelo rigor técnico e pelos resultados entregues.",
+  "values": [
+    "Ética e confidencialidade",
+    "Rigor científico e clínico",
+    "Foco em resultados mensuráveis",
+    "Transparência nas relações"
+  ],
+  "team": [
+    {
+      "title": "Psicólogos organizacionais",
+      "text": "Responsáveis pelo diagnóstico psicossocial, pelas avaliações especializadas e pelo desenho dos planos de ação personalizados por indicador."
+    },
+    {
+      "title": "Especialistas em segurança do trabalho",
+      "text": "Integram os riscos psicossociais ao PGR e à NR-01, com evidências documentadas, auditáveis e prontas para fiscalização."
+    },
+    {
+      "title": "Consultores de liderança",
+      "text": "Formam e acompanham gestores em liderança saudável, gestão de conflitos, reconhecimento e alta performance."
+    },
+    {
+      "title": "Analistas de clima e indicadores",
+      "text": "Monitoram indicadores continuamente, garantem relatórios comparáveis e suportam decisões com dados."
+    }
+  ],
+  "differentials": [
+    "Identificação do preço dos problemas de saúde mental",
+    "Indicadores de saúde detalhados para tomada de decisão",
+    "Redução de absenteísmo e presenteísmo",
+    "Redução do turnover e queda de custos de contratação",
+    "Melhoria do clima organizacional e redução de custos ocultos",
+    "Planejamento estratégico assertivo com inovação contínua"
+  ],
+  "trustBar": [
+    "NR-01 · Riscos psicossociais",
+    "PGR auditável",
+    "ISO 45003 como referência",
+    "Conformidade e segurança jurídica",
+    "LGPD"
+  ],
+  "images": {
+    "hero": "/images/hero-escritorio.jpg",
+    "about": "/images/sobre-reuniao.jpg",
+    "team": "/images/equipe.jpg"
+  }
+}

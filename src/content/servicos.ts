@@ -1,8 +1,7 @@
 /**
- * SERVIÇOS DA SELO MAGNA
- * Para editar, altere apenas os textos entre aspas.
- * "priceFrom" é opcional: apague a linha se preferir não mostrar preço.
+ * Os textos ficam em /content/servicos.json e são editados pelo painel: selomagna.com.br/admin
  */
+import data from "../../content/servicos.json";
 
 export type Servico = {
   slug: string;
@@ -18,113 +17,6 @@ export type Servico = {
   priceFrom?: string;
 };
 
-export const servicos: Servico[] = [
-  {
-    slug: "diagnostico-psicossocial",
-    icon: "Search",
-    title: "Diagnóstico Psicossocial",
-    summary:
-      "Mapeamento completo dos riscos psicossociais com instrumentos validados, indicadores e o custo estimado de cada problema para a sua empresa.",
-    metaTitle: "Diagnóstico Psicossocial e Mapeamento de Riscos NR-1",
-    metaDescription:
-      "Diagnóstico de riscos psicossociais com instrumentos validados, relatório executivo, custo dos problemas e plano de ação. Base para o PGR e a NR-1.",
-    forWhom: "Empresas que precisam incluir os riscos psicossociais no PGR ou querem entender o que está por trás de turnover, afastamentos e clima ruim.",
-    deliverables: [
-      "Aplicação de questionários validados (online e anônimos)",
-      "Entrevistas e grupos focais com lideranças e equipes",
-      "Relatório executivo com mapa de calor por área",
-      "Estimativa do custo financeiro de cada risco",
-      "Inventário de riscos psicossociais para o PGR",
-      "Plano de ação priorizado com responsáveis e prazos",
-    ],
-    steps: [
-      { title: "Reunião de alinhamento", text: "Entendemos o contexto, os dados disponíveis e os objetivos." },
-      { title: "Coleta", text: "Pesquisas, entrevistas e análise de indicadores de RH e SST." },
-      { title: "Análise", text: "Cruzamento de dados, classificação de riscos e cálculo de custos." },
-      { title: "Devolutiva", text: "Apresentação à diretoria e ao RH com plano de ação." },
-    ],
-    duration: "4 a 8 semanas",
-    priceFrom: "Sob consulta",
-  },
-  {
-    slug: "treinamentos-e-workshops",
-    icon: "GraduationCap",
-    title: "Treinamentos, Palestras e Workshops",
-    summary:
-      "Capacitação de lideranças e equipes em liderança saudável, saúde mental, prevenção ao assédio, gestão de conflitos e alta performance.",
-    metaTitle: "Treinamento de Lideranças em Saúde Mental e NR-1",
-    metaDescription:
-      "Workshops e palestras práticas sobre liderança saudável, saúde mental no trabalho, prevenção ao assédio e gestão de conflitos. Presencial e online.",
-    forWhom: "Gestores, lideranças intermediárias, RH, CIPA e equipes que precisam de ferramentas práticas para o dia a dia.",
-    deliverables: [
-      "Workshops práticos de 2 a 8 horas",
-      "Trilhas de desenvolvimento para lideranças",
-      "Palestras para SIPAT, Janeiro Branco e Setembro Amarelo",
-      "Materiais de apoio e planos de aplicação",
-      "Avaliação de reação e de impacto",
-    ],
-    steps: [
-      { title: "Levantamento", text: "Entendemos as dores reais da equipe e da liderança." },
-      { title: "Desenho", text: "Conteúdo sob medida, com casos da realidade da empresa." },
-      { title: "Execução", text: "Formatos presenciais ou online ao vivo, com dinâmicas práticas." },
-      { title: "Medição", text: "Indicadores antes e depois para comprovar o impacto." },
-    ],
-    duration: "Pontual ou em trilhas de 3 a 6 meses",
-    priceFrom: "Sob consulta",
-  },
-  {
-    slug: "implantacao-de-programas",
-    icon: "Settings2",
-    title: "Implantação de Programas e Adequação à NR-1",
-    summary:
-      "Implementação completa do plano de ação: integração ao PGR, políticas, canal de acolhimento, rituais de gestão e preparação para selos e certificações.",
-    metaTitle: "Implantação de Programa de Saúde Mental e NR-1",
-    metaDescription:
-      "Implantação de programas de saúde psicossocial, integração ao PGR e preparação para selos como Empresa Promotora da Saúde Mental e GPTW.",
-    forWhom: "Empresas que já têm o diagnóstico e precisam transformar o plano de ação em prática, com evidências auditáveis.",
-    deliverables: [
-      "Integração dos riscos psicossociais ao PGR, em conjunto com o SESMT",
-      "Políticas de prevenção ao assédio e fluxo de denúncias",
-      "Programa de saúde mental com calendário anual",
-      "Avaliação de adequação perfil × função",
-      "Preparação para selos e certificações (ex.: Certificado Empresa Promotora da Saúde Mental, GPTW)",
-      "Documentação organizada para fiscalização",
-    ],
-    steps: [
-      { title: "Priorização", text: "Definimos quick wins e ações estruturais." },
-      { title: "Implementação", text: "Execução conjunta com RH, SESMT e lideranças." },
-      { title: "Evidências", text: "Registros, atas, indicadores e relatórios auditáveis." },
-      { title: "Revisão", text: "Ajustes do plano a partir dos primeiros resultados." },
-    ],
-    duration: "3 a 12 meses",
-    priceFrom: "Sob consulta",
-  },
-  {
-    slug: "consultoria-mensal",
-    icon: "LineChart",
-    title: "Consultoria Mensal e Monitoramento",
-    summary:
-      "Acompanhamento contínuo dos indicadores psicossociais, com painel, relatórios trimestrais comparáveis e suporte técnico para a liderança e o RH.",
-    metaTitle: "Monitoramento de Indicadores de Saúde Psicossocial",
-    metaDescription:
-      "Consultoria mensal com painel de indicadores, pesquisas periódicas, relatórios trimestrais e suporte contínuo ao RH e às lideranças.",
-    forWhom: "Empresas que querem manter a gestão psicossocial viva, mensurável e sempre pronta para auditorias.",
-    deliverables: [
-      "Painel de indicadores (absenteísmo, turnover, clima, eNPS, riscos)",
-      "Pesquisas periódicas de acompanhamento",
-      "Relatórios trimestrais comparáveis",
-      "Reuniões mensais com RH e diretoria",
-      "Suporte técnico para casos e dúvidas das lideranças",
-    ],
-    steps: [
-      { title: "Linha de base", text: "Definimos os indicadores e a meta de cada um." },
-      { title: "Acompanhamento", text: "Coletas periódicas e painel atualizado." },
-      { title: "Análise", text: "Leitura de tendências e alertas precoces." },
-      { title: "Ação", text: "Recomendações práticas a cada ciclo." },
-    ],
-    duration: "Contrato recorrente (mensal)",
-    priceFrom: "Sob consulta",
-  },
-];
+export const servicos = data.items as Servico[];
 
 export const getServico = (slug: string) => servicos.find((s) => s.slug === slug);

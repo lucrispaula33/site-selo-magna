@@ -12,11 +12,16 @@ Site institucional e de captação de clientes da **Selo Magna — Solução Est
 | [docs/04-guia-de-dominio.md](docs/04-guia-de-dominio.md) | Comprar e conectar o domínio |
 | [docs/05-guia-de-manutencao.md](docs/05-guia-de-manutencao.md) | Editar textos, publicar artigos e trocar fotos |
 
-## Arquivos que você vai editar
+## Painel de edição
 
-- `src/config/site.ts` → contatos, redes, missão, visão, valores, equipe
-- `src/content/pilares.ts` → os 7 pilares
-- `src/content/servicos.ts` → serviços
+Acesse **/admin** (ex.: selomagna.com.br/admin) e entre com o GitHub. Veja `docs/05-guia-de-manutencao.md`.
+
+## Arquivos de conteúdo
+
+- `content/site.json` → contatos, redes, missão, visão, valores, equipe, fotos
+- `content/home.json`, `content/sobre.json` → textos das páginas
+- `content/pilares.json` → os 7 pilares
+- `content/servicos.json` → serviços
 - `content/blog/*.md` → artigos
 - `public/images/` → fotos
 

@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "eyebrow": "Gestão estratégica de riscos psicossociais",
+    "title": "O que sua empresa perde em silêncio tem nome — e tem solução.",
+    "subtitle": "A Selo Magna ajuda médias e grandes empresas a diagnosticar, monitorar e reduzir os riscos psicossociais que consomem resultados: burnout, turnover, absenteísmo, engajamento e clima.",
+    "ctaPrimary": "Falar com um especialista",
+    "ctaSecondary": "Conhecer os 7 pilares",
+    "badgeLabel": "Referência do setor",
+    "badgeText": "35% de turnover = 35 desligamentos por ano em uma empresa de 100 pessoas."
+  },
+  "team": {
+    "eyebrow": "Quem trabalha na Selo Magna",
+    "title": "Uma equipe multidisciplinar para um problema multidimensional.",
+    "text": "Riscos psicossociais não se resolvem com uma única especialidade. A Selo Magna combina psicologia organizacional, segurança do trabalho, desenvolvimento de lideranças e análise de indicadores — com a relação custo-benefício em cada recomendação e foco na melhoria contínua do dia a dia."
+  },
+  "services": {
+    "eyebrow": "Como trabalhamos",
+    "title": "Do diagnóstico ao acompanhamento contínuo."
+  },
+  "differentialsTitle": "Nossos diferenciais",
+  "nr1": {
+    "eyebrow": "NR-1 em vigor",
+    "title": "Desde 26 de maio de 2026, os riscos psicossociais no PGR estão sujeitos a fiscalização.",
+    "text": "Diagnóstico, inventário, plano de ação e evidências auditáveis — tudo integrado ao trabalho do seu SESMT."
+  },
+  "blogTitle": "Conteúdos para líderes e RH",
+  "contact": {
+    "title": "Vamos conversar sobre a sua organização?",
+    "text": "Conte o cenário da sua empresa e receba uma proposta de diagnóstico com indicadores claros e plano de ação personalizado.",
+    "note": "Nossa abordagem não é apenas sobre bem-estar: é sobre continuidade do negócio, indicadores auditáveis e segurança jurídica."
+  }
+}

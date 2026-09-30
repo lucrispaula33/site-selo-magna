@@ -1,0 +1,240 @@
+# Painel de edição do site Selo Magna — selomagna.com.br/admin
+backend:
+  name: github
+  repo: lucrispaula33/site-selo-magna
+  branch: main
+  commit_messages:
+    create: "Painel: cria {{collection}} “{{slug}}”"
+    update: "Painel: atualiza {{collection}} “{{slug}}”"
+    delete: "Painel: remove {{collection}} “{{slug}}”"
+    uploadMedia: "Painel: envia imagem {{path}}"
+    deleteMedia: "Painel: remove imagem {{path}}"
+
+site_url: https://selomagna.com.br
+display_url: https://selomagna.com.br
+locale: pt
+media_folder: public/images
+public_folder: /images
+
+collections:
+  # ─────────────────────────────── BLOG
+  - name: blog
+    label: Blog
+    label_singular: Artigo
+    description: Artigos do blog. Depois de salvar, o site é atualizado em 1 a 2 minutos.
+    folder: content/blog
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    sortable_fields: [date, title]
+    summary: "{{title}} — {{date}}"
+    fields:
+      - { label: Título, name: title, widget: string, hint: "Até 65 caracteres (aparece no Google)." }
+      - { label: Resumo, name: description, widget: text, hint: "Até 155 caracteres (aparece no Google e na lista do blog)." }
+      - { label: Data, name: date, widget: datetime, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
+      - { label: Autor, name: author, widget: string, default: "Equipe Selo Magna" }
+      - { label: Categoria, name: category, widget: string, hint: "Ex.: NR-1, Burnout, Turnover, Liderança" }
+      - { label: Imagem de capa, name: cover, widget: image, required: false }
+      - { label: Texto, name: body, widget: markdown }
+
+  # ─────────────────────────────── PÁGINAS
+  - name: paginas
+    label: Páginas
+    files:
+      - name: home
+        label: Página inicial
+        file: content/home.json
+        fields:
+          - label: Topo (primeira tela)
+            name: hero
+            widget: object
+            fields:
+              - { label: Etiqueta, name: eyebrow, widget: string }
+              - { label: Título principal, name: title, widget: text }
+              - { label: Texto de apoio, name: subtitle, widget: text }
+              - { label: Botão principal, name: ctaPrimary, widget: string }
+              - { label: Botão secundário, name: ctaSecondary, widget: string }
+              - { label: Cartão sobre a foto — rótulo, name: badgeLabel, widget: string }
+              - { label: Cartão sobre a foto — texto, name: badgeText, widget: text }
+          - label: Seção equipe
+            name: team
+            widget: object
+            fields:
+              - { label: Etiqueta, name: eyebrow, widget: string }
+              - { label: Título, name: title, widget: string }
+              - { label: Texto, name: text, widget: text }
+          - label: Seção serviços
+            name: services
+            widget: object
+            fields:
+              - { label: Etiqueta, name: eyebrow, widget: string }
+              - { label: Título, name: title, widget: string }
+          - { label: Título dos diferenciais, name: differentialsTitle, widget: string }
+          - label: Faixa NR-1
+            name: nr1
+            widget: object
+            fields:
+              - { label: Etiqueta, name: eyebrow, widget: string }
+              - { label: Título, name: title, widget: text }
+              - { label: Texto, name: text, widget: text }
+          - { label: Título do blog, name: blogTitle, widget: string }
+          - label: Seção de contato (usada em todas as páginas)
+            name: contact
+            widget: object
+            fields:
+              - { label: Título, name: title, widget: string }
+              - { label: Texto, name: text, widget: text }
+              - { label: Destaque, name: note, widget: text }
+      - name: sobre
+        label: Sobre
+        file: content/sobre.json
+        fields:
+          - { label: Etiqueta, name: eyebrow, widget: string }
+          - { label: Título, name: title, widget: text }
+          - { label: Parágrafos, name: paragraphs, widget: list, field: { label: Parágrafo, name: p, widget: text } }
+          - { label: Título da equipe, name: teamTitle, widget: string }
+          - { label: Texto da equipe, name: teamText, widget: text }
+          - { label: Título do compromisso ético, name: ethicsTitle, widget: string }
+          - { label: Texto do compromisso ético, name: ethicsText, widget: text }
+
+  # ─────────────────────────────── DADOS DA EMPRESA
+  - name: empresa
+    label: Empresa e contatos
+    files:
+      - name: site
+        label: Dados gerais, contatos, missão e equipe
+        file: content/site.json
+        fields:
+          - { label: Nome, name: name, widget: string }
+          - { label: Nome completo, name: fullName, widget: string }
+          - { label: Razão social, name: legalName, widget: string }
+          - { label: CNPJ, name: cnpj, widget: string }
+          - { label: Frase curta (tagline), name: tagline, widget: string }
+          - { label: Descrição (aparece no Google), name: description, widget: text }
+          - label: Contatos
+            name: contact
+            widget: object
+            fields:
+              - { label: "WhatsApp (só números, com 55 e DDD)", name: whatsapp, widget: string, hint: "Ex.: 5511987654321" }
+              - { label: WhatsApp (como aparece no site), name: whatsappDisplay, widget: string, hint: "Ex.: (11) 98765-4321" }
+              - { label: Mensagem inicial do WhatsApp, name: whatsappMessage, widget: text }
+              - { label: E-mail, name: email, widget: string }
+              - { label: Telefone (como aparece no site), name: phoneDisplay, widget: string }
+              - label: Endereço
+                name: address
+                widget: object
+                fields:
+                  - { label: Rua e número, name: street, widget: string }
+                  - { label: Cidade, name: city, widget: string }
+                  - { label: UF, name: state, widget: string }
+                  - { label: CEP, name: zip, widget: string }
+                  - { label: País, name: country, widget: hidden, default: BR }
+              - { label: Endereço para o mapa, name: mapsQuery, widget: string }
+              - { label: Horário de atendimento, name: hours, widget: string }
+              - { label: Área de atendimento, name: serviceArea, widget: string }
+          - label: Redes sociais
+            name: social
+            widget: object
+            fields:
+              - { label: LinkedIn (link), name: linkedin, widget: string }
+              - { label: Instagram (link), name: instagram, widget: string }
+          - { label: Missão, name: mission, widget: text }
+          - { label: Visão, name: vision, widget: text }
+          - { label: Valores, name: values, widget: list, field: { label: Valor, name: v, widget: string } }
+          - label: Quem trabalha na Selo Magna
+            name: team
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Função, name: title, widget: string }
+              - { label: Descrição, name: text, widget: text }
+          - { label: Diferenciais, name: differentials, widget: list, field: { label: Diferencial, name: d, widget: string } }
+          - { label: Faixa de credibilidade (abaixo do topo), name: trustBar, widget: list, field: { label: Item, name: t, widget: string } }
+          - label: Significado de S.E.L.O.
+            name: acronym
+            widget: list
+            allow_add: false
+            summary: "{{fields.letter}} — {{fields.word}}"
+            fields:
+              - { label: Letra, name: letter, widget: string }
+              - { label: Palavra, name: word, widget: string }
+          - { label: Significado de Magna, name: magnaMeaning, widget: text }
+          - label: Fotos principais
+            name: images
+            widget: object
+            fields:
+              - { label: Foto do topo da página inicial, name: hero, widget: image }
+              - { label: Foto da página Sobre, name: about, widget: image }
+              - { label: Foto da seção equipe, name: team, widget: image }
+
+  # ─────────────────────────────── PILARES
+  - name: pilares
+    label: Pilares (7 páginas)
+    files:
+      - name: pilares
+        label: Textos dos 7 pilares
+        file: content/pilares.json
+        fields:
+          - label: Pilares
+            name: items
+            widget: list
+            allow_add: false
+            summary: "{{fields.short}}"
+            fields:
+              - { label: "Endereço da página (não altere)", name: slug, widget: string }
+              - { label: Ícone, name: icon, widget: select, options: [Flame, HeartPulse, Users, ClipboardCheck, Scale, BatteryLow, BookOpen] }
+              - { label: Nome curto, name: short, widget: string }
+              - { label: Texto do cartão (página inicial), name: card, widget: text }
+              - { label: Título da página, name: headline, widget: text }
+              - { label: Título no Google, name: metaTitle, widget: string }
+              - { label: Descrição no Google, name: metaDescription, widget: text }
+              - { label: Introdução, name: intro, widget: text }
+              - { label: Sinais de alerta, name: signs, widget: list, field: { label: Sinal, name: s, widget: string } }
+              - label: Como resolvemos (etapas)
+                name: approach
+                widget: list
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: Título, name: title, widget: string }
+                  - { label: Texto, name: text, widget: text }
+              - { label: Resultados esperados, name: results, widget: list, field: { label: Resultado, name: r, widget: string } }
+              - label: Perguntas frequentes
+                name: faq
+                widget: list
+                summary: "{{fields.q}}"
+                fields:
+                  - { label: Pergunta, name: q, widget: string }
+                  - { label: Resposta, name: a, widget: text }
+
+  # ─────────────────────────────── SERVIÇOS
+  - name: servicos
+    label: Serviços
+    files:
+      - name: servicos
+        label: Textos dos serviços
+        file: content/servicos.json
+        fields:
+          - label: Serviços
+            name: items
+            widget: list
+            allow_add: false
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Endereço da página (não altere)", name: slug, widget: string }
+              - { label: Ícone, name: icon, widget: select, options: [Search, GraduationCap, Settings2, LineChart] }
+              - { label: Nome do serviço, name: title, widget: string }
+              - { label: Resumo, name: summary, widget: text }
+              - { label: Título no Google, name: metaTitle, widget: string }
+              - { label: Descrição no Google, name: metaDescription, widget: text }
+              - { label: Para quem é, name: forWhom, widget: text }
+              - { label: O que está incluído, name: deliverables, widget: list, field: { label: Item, name: d, widget: string } }
+              - label: Como funciona (etapas)
+                name: steps
+                widget: list
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: Título, name: title, widget: string }
+                  - { label: Texto, name: text, widget: text }
+              - { label: Duração, name: duration, widget: string }
+              - { label: Investimento, name: priceFrom, widget: string, required: false }

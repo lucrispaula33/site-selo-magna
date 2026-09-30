@@ -1,5 +1,26 @@
 # 5. Guia de Manutenção e Edição de Conteúdo
 
+## Jeito mais fácil: o painel de edição
+
+Acesse **selomagna.com.br/admin** → **Login with GitHub**. Quem tiver acesso ao repositório `site-selo-magna` pode editar:
+
+| Menu do painel | O que dá para editar |
+|---|---|
+| **Blog** | Criar, editar e apagar artigos, com imagem de capa |
+| **Páginas → Página inicial** | Todos os textos da página inicial e da seção de contato |
+| **Páginas → Sobre** | Textos da página Sobre |
+| **Empresa e contatos** | WhatsApp, e-mail, endereço, redes sociais, missão, visão, valores, equipe, diferenciais e as **fotos principais** |
+| **Pilares (7 páginas)** | Todos os textos das 7 páginas de pilares |
+| **Serviços** | Textos das 4 páginas de serviços |
+
+Clique em **Publish → Publish now** para salvar. O site é atualizado em 1 a 2 minutos. Fotos são enviadas pelo próprio campo de imagem (JPG com até ~300 KB; use squoosh.app para comprimir).
+
+**Dar acesso a outra pessoa:** no GitHub, repositório `site-selo-magna` → **Settings → Collaborators → Add people**. Depois de aceitar o convite, ela já consegue entrar no painel.
+
+---
+
+## Alternativa: editar direto no GitHub
+
 Você não precisa instalar nada. Toda edição é feita pelo navegador, no GitHub. Ao salvar, a Netlify atualiza o site em 1 a 2 minutos.
 
 ## Como editar qualquer arquivo pelo navegador
@@ -17,13 +38,13 @@ Você não precisa instalar nada. Toda edição é feita pelo navegador, no GitH
 
 | O que você quer mudar | Arquivo |
 |---|---|
-| WhatsApp, e-mail, endereço, redes, CNPJ, missão, visão, valores, equipe, diferenciais | `src/config/site.ts` |
-| Textos dos 7 pilares (títulos, sinais, perguntas frequentes) | `src/content/pilares.ts` |
-| Serviços (descrição, entregas, etapas, prazo) | `src/content/servicos.ts` |
+| WhatsApp, e-mail, endereço, redes, CNPJ, missão, visão, valores, equipe, diferenciais, fotos principais | `content/site.json` |
+| Textos dos 7 pilares (títulos, sinais, perguntas frequentes) | `content/pilares.json` |
+| Serviços (descrição, entregas, etapas, prazo) | `content/servicos.json` |
 | Premissas e percentuais dos custos | `src/lib/costs.ts` |
 | Artigos do blog | pasta `content/blog/` |
 | Fotos | pasta `public/images/` |
-| Textos do topo da página inicial | `src/app/page.tsx` |
+| Textos da página inicial / Sobre | `content/home.json` / `content/sobre.json` |
 | Política de Privacidade / Termos | `src/app/politica-de-privacidade/page.tsx` / `src/app/termos-de-uso/page.tsx` |
 
 ## Regras de ouro para não quebrar nada

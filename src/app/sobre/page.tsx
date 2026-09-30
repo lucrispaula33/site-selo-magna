@@ -1,4 +1,5 @@
 import { site } from "@/config/site";
+import sobre from "../../../content/sobre.json";
 import { pageMeta } from "@/lib/seo";
 import ImageSlot from "@/components/ImageSlot";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -19,16 +20,11 @@ export default function Sobre() {
           <Breadcrumbs items={[{ label: "Sobre", href: "/sobre" }]} />
           <div className="mt-10 grid items-center gap-14 lg:grid-cols-2">
             <div>
-              <p className="eyebrow">Sobre a consultoria</p>
-              <h1 className="mt-5 text-5xl leading-[1.05] md:text-6xl">Estratégia, rigor técnico e cuidado com pessoas — no mesmo lugar.</h1>
-              <p className="lead mt-7">
-                A {site.fullName} nasce para integrar a estratégia do negócio à saúde mental corporativa. Tratamos o capital humano com o
-                rigor técnico de uma auditoria: diagnóstico preciso, indicadores claros, planos de ação personalizados e acompanhamento contínuo.
-              </p>
-              <p className="lead mt-5">
-                Nosso público-alvo são diretores e gestores de RH de empresas médias e grandes — especialmente organizações com alta
-                rotatividade ou absenteísmo, alto risco de clima e empresas que buscam certificações.
-              </p>
+              <p className="eyebrow">{sobre.eyebrow}</p>
+              <h1 className="mt-5 text-5xl leading-[1.05] md:text-6xl">{sobre.title}</h1>
+              {sobre.paragraphs.map((p, i) => (
+                <p key={i} className={`lead ${i === 0 ? "mt-7" : "mt-5"}`}>{p}</p>
+              ))}
             </div>
             <ImageSlot src={site.images.about} alt="Consultora e gestor analisando um relatório de indicadores" className="aspect-[4/3]" priority />
           </div>
@@ -37,8 +33,8 @@ export default function Sobre() {
       <TrustBar />
       <section className="section bg-white">
         <div className="container">
-          <h2 className="text-4xl md:text-5xl">Quem trabalha na {site.name}</h2>
-          <p className="lead mt-4">Um time multidisciplinar que cobre todas as frentes da organização saudável.</p>
+          <h2 className="text-4xl md:text-5xl">{sobre.teamTitle}</h2>
+          <p className="lead mt-4">{sobre.teamText}</p>
           <div className="mt-10"><TeamGrid tone="cream" /></div>
         </div>
       </section>
@@ -51,11 +47,8 @@ export default function Sobre() {
           <h2 className="text-4xl md:text-5xl">Nossos diferenciais</h2>
           <div className="mt-10"><Differentials /></div>
           <div className="mt-14 rounded-3xl border border-areia-300/70 bg-white p-8 md:p-10">
-            <h3 className="text-2xl">Compromisso ético</h3>
-            <p className="mt-3 leading-relaxed text-slate-600">
-              Seguimos o Código de Ética Profissional do Psicólogo: autonomia técnica, sigilo e confidencialidade. A empresa recebe dados
-              agregados e anonimizados; informações individuais de saúde nunca são compartilhadas. Tratamos dados pessoais conforme a LGPD.
-            </p>
+            <h3 className="text-2xl">{sobre.ethicsTitle}</h3>
+            <p className="mt-3 leading-relaxed text-slate-600">{sobre.ethicsText}</p>
           </div>
         </div>
       </section>

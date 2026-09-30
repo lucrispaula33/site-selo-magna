@@ -1,9 +1,10 @@
 import { site, whatsappLink } from "@/config/site";
 import LeadForm from "./LeadForm";
+import home from "../../content/home.json";
 
 export default function ContactSection({
-  title = "Vamos conversar sobre a sua organização?",
-  text = "Conte o cenário da sua empresa e receba uma proposta de diagnóstico com indicadores claros e plano de ação personalizado.",
+  title = home.contact.title,
+  text = home.contact.text,
   defaultChallenge,
   origem,
 }: { title?: string; text?: string; defaultChallenge?: string; origem?: string }) {
@@ -14,7 +15,7 @@ export default function ContactSection({
           <h2 className="text-4xl text-white md:text-5xl">{title}</h2>
           <p className="mt-6 text-lg leading-relaxed text-slate-300">{text}</p>
           <div className="mt-10 rounded-2xl border border-white/10 bg-white/5 p-6 text-slate-200">
-            Nossa abordagem não é apenas sobre bem-estar: é sobre continuidade do negócio, indicadores auditáveis e segurança jurídica.
+            {home.contact.note}
           </div>
           <a href={whatsappLink()} target="_blank" rel="noopener" className="btn-whats mt-10" data-track="whatsapp_secao">
             Falar agora pelo WhatsApp
