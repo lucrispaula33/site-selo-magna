@@ -31,13 +31,13 @@
     "email": "selomagna@outlook.com",
     "phoneDisplay": "(11) 90000-0000",
     "address": {
-      "street": "Av. Paulista, 1000 — Bela Vista",
+      "street": "",
       "city": "São Paulo",
       "state": "SP",
-      "zip": "01310-100",
+      "zip": "",
       "country": "BR"
     },
-    "mapsQuery": "Av. Paulista, 1000, São Paulo - SP",
+    "mapsQuery": "",
     "hours": "Segunda a sexta, 9h às 18h",
     "serviceArea": "Atendimento presencial em São Paulo e online em todo o Brasil"
   },

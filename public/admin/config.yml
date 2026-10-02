@@ -125,12 +125,12 @@ collections:
                 name: address
                 widget: object
                 fields:
-                  - { label: Rua e número, name: street, widget: string }
+                  - { label: Rua e número (deixe vazio para não exibir), name: street, widget: string, required: false }
                   - { label: Cidade, name: city, widget: string }
                   - { label: UF, name: state, widget: string }
-                  - { label: CEP, name: zip, widget: string }
+                  - { label: CEP, name: zip, widget: string, required: false }
                   - { label: País, name: country, widget: hidden, default: BR }
-              - { label: Endereço para o mapa, name: mapsQuery, widget: string }
+              - { label: Endereço para o mapa (deixe vazio para não exibir o mapa), name: mapsQuery, widget: string, required: false }
               - { label: Horário de atendimento, name: hours, widget: string }
               - { label: Área de atendimento, name: serviceArea, widget: string }
           - label: Redes sociais

@@ -43,7 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             image: `${site.url}/opengraph-image`,
             email: site.contact.email,
             telephone: `+${site.contact.whatsapp}`,
-            address: { "@type": "PostalAddress", streetAddress: a.street, addressLocality: a.city, addressRegion: a.state, postalCode: a.zip, addressCountry: a.country },
+            address: { "@type": "PostalAddress", ...(a.street ? { streetAddress: a.street } : {}), addressLocality: a.city, addressRegion: a.state, ...(a.zip ? { postalCode: a.zip } : {}), addressCountry: a.country },
             areaServed: { "@type": "Country", name: "Brasil" },
             sameAs: Object.values(site.social),
             knowsAbout: ["Riscos psicossociais", "NR-1", "PGR", "ISO 45003", "Burnout", "Saúde mental corporativa", "Liderança"],
