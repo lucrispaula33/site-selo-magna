@@ -7,7 +7,7 @@ import { InstagramIcon, LinkedInIcon } from "@/components/BrandIcons";
 
 export const metadata = pageMeta({
   title: "Contato: Fale com um Especialista",
-  description: "Fale com a Selo Magna pelo WhatsApp, e-mail ou formulário. Atendimento presencial em São Paulo e online em todo o Brasil.",
+  description: "Fale com a Selo Magna pelo WhatsApp, e-mail ou formulário. Atendimento presencial em São Paulo e Rio de Janeiro e online em todo o Brasil.",
   path: "/contato",
 });
 
