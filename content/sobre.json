@@ -8,5 +8,64 @@
   "teamTitle": "Quem trabalha na Selo Magna",
   "teamText": "Um time multidisciplinar que cobre todas as frentes da organização saudável.",
   "ethicsTitle": "Compromisso ético",
-  "ethicsText": "Seguimos o Código de Ética Profissional do Psicólogo: autonomia técnica, sigilo e confidencialidade. A empresa recebe dados agregados e anonimizados; informações individuais de saúde nunca são compartilhadas. Tratamos dados pessoais conforme a LGPD."
+  "ethicsText": "Seguimos o Código de Ética Profissional do Psicólogo: autonomia técnica, sigilo e confidencialidade. A empresa recebe dados agregados e anonimizados; informações individuais de saúde nunca são compartilhadas. Tratamos dados pessoais conforme a LGPD.",
+  "partnersEyebrow": "Quem está por trás da Selo Magna",
+  "partnersTitle": "Três trajetórias. Um mesmo propósito.",
+  "partnersIntro": [
+    "A Selo Magna nasceu do encontro de três mulheres que, em caminhos diferentes, chegaram à mesma conclusão: nenhuma empresa é saudável se as pessoas que a fazem acontecer não estão bem.",
+    "Uma vem do mundo dos negócios e sabe abrir portas. Outra traz o olhar da psicologia e o rigor técnico do diagnóstico. A terceira domina a arte de transformar a experiência de quem trabalha. As três têm passagem pela Fast Shop, e Luana e Maria Fernanda voltaram a trabalhar juntas na B. Braun, construindo áreas de experiência premiadas. Juntas, cobrem a jornada inteira: do primeiro contato com a empresa até a mudança que se sente no dia a dia."
+  ],
+  "partners": [
+    {
+      "name": "Fernanda Linhares Carvalho",
+      "role": "Sócia · Comercial, Parcerias e Neurobioarquitetura",
+      "photo": "/images/fernanda-linhares.webp",
+      "chapter": "O primeiro passo",
+      "linkedin": "https://www.linkedin.com/in/fernanda-linhares-carvalho10/",
+      "story": "Especialista em Gestão de Negócios pela ESPM e em Saúde Mental e Qualidade de Vida no Trabalho pela FIA, com atualizações em Saúde Mental Organizacional e adequação à NR-01 e NR-17 pelo Ensino Albert Einstein, Fernanda é pós-graduanda em Neurociência Aplicada à Saúde pelo Hospital Sírio-Libanês e se formou em regulação neurofisiológica (Mindfulness pela PUC-RS e Breathwork).\n\nSão mais de 23 anos conectando grandes corporações, como Fast Shop, Itaú Unibanco e HSBC, ao empreendedorismo: liderou projetos do zero, como o e-commerce da a2YOU (Apple/Fast Shop), geriu grandes contas e há uma década empreende, primeiro no varejo e depois em consultoria, com domínio de todas as pontas da operação.\n\nDesde 2022 é CEO da Neuroarquitetura Sensorial, onde aplica neurociência e biologia ao desenho de escritórios, salas de decisão e espaços sociais, usando cores, luz e layout para ajudar o sistema nervoso a se regular, reduzindo a sobrecarga em ambientes de alta pressão e estimulando foco onde se exige alta performance. Também é mentora e palestrante de Performance Sustentável, no corporativo e no social, pelo BIOHACKING Institute.\n\nNa Selo Magna, é quem traduz a saúde mental para a linguagem dos negócios e abre as portas para que a primeira conversa vire um projeto com resultado.",
+      "focus": [
+        "Captação de empresas, parceiros, associados e patrocinadores",
+        "Neurobioarquitetura: avaliação dos ambientes, gestão dos arquitetos e da execução dos projetos",
+        "Apoio ao GRO/PGR (NR-01) e à Análise Ergonômica do Trabalho (NR-17), alinhados às ISO 45001 e 45003",
+        "Mentorias e palestras de Performance Sustentável",
+        "Treinamento de Respiração e Pausa Consciente",
+        "Metodologia Axial para conscientização",
+        "Atuação integrada com o médico do trabalho"
+      ]
+    },
+    {
+      "name": "Luana de Paula",
+      "role": "Sócia · Diagnóstico, Plano de Ação e Validação no PGR/GRO",
+      "photo": "/images/luana-de-paula.webp",
+      "chapter": "O diagnóstico",
+      "linkedin": "https://www.linkedin.com/in/luanadepaula/",
+      "story": "Psicóloga, com MBA em Gestão Estratégica de Projetos pela FGV, Luana soma mais de 15 anos transformando a forma como empresas cuidam de quem atendem e de quem trabalha com elas.\n\nNa Fast Shop e na B. Braun, liderou equipes de até 200 pessoas, criou áreas inteiras do zero e conduziu comitês executivos levando a voz do cliente às decisões da alta liderança, com ganhos de NPS de dois dígitos em ciclos sucessivos. Também foi mentora em programa de desenvolvimento de talentos e conduziu iniciativas de engajamento, diversidade e aprendizagem contínua. É coautora do livro \"CX & CS: Criando Experiências que Geram Valor\" (2025).\n\nNa Selo Magna, é a responsável técnica: transforma percepções em evidências, mede os riscos psicossociais com método validado e entrega um plano de ação que a empresa consegue executar e que resiste a uma fiscalização.",
+      "focus": [
+        "Avaliação de riscos psicossociais para o GRO/PGR",
+        "Parecer técnico psicossocial e assinatura do inventário de riscos do PGR",
+        "Validação da metodologia dos testes psicométricos",
+        "Programas de autoconhecimento, conscientização e desenvolvimento de lideranças",
+        "Interface com o RH, auditoria e conformidade de processos internos",
+        "Governança por indicadores e comitês com a alta liderança"
+      ]
+    },
+    {
+      "name": "Maria Fernanda Ribeiro Toledo",
+      "role": "Sócia · CX/EX, Eventos, Experiências e Suporte ao Colaborador",
+      "photo": "/images/maria-fernanda.webp",
+      "chapter": "A transformação",
+      "linkedin": "https://www.linkedin.com/in/maria-fernanda-cx/",
+      "story": "Formada em Recursos Humanos, pós-graduada em Gestão de Pessoas pela PUC-RS e certificada em Neurociência e Ciência do Bem-Estar, Maria Fernanda conhece a operação por dentro: começou no SAC da Fast Shop e, em 14 anos, chegou a coordenadora de Experiência do Cliente, liderando equipes com mais de 200 pessoas.\n\nPassou ainda pela B. Braun e pela Xiaomi Brasil, onde coordenou RH e melhoria de processos com foco na experiência do colaborador.\n\nDessa trajetória vem sua premissa: a forma como o colaborador é tratado chega, cedo ou tarde, ao cliente. Por isso mapeia a jornada do colaborador, encontra os pontos de atrito entre a experiência do colaborador (EX) e a do cliente (CX) e cria vivências que dão sentido às metas, sempre medindo o resultado com indicadores. É também a ponte do dia a dia: acompanha as equipes e garante que o cuidado continue depois que o projeto termina.",
+      "focus": [
+        "Mapeamento da jornada do colaborador",
+        "Pontos de atrito entre EX e CX",
+        "Suporte e intermediação com os colaboradores das empresas",
+        "Experiências e vivências para líderes e equipes: metas sustentáveis e motivação",
+        "People analytics e dashboards de acompanhamento (Green Belt em melhoria de processos)",
+        "Eventos e Metodologia Axial para conscientização"
+      ]
+    }
+  ],
+  "partnersCommonTitle": "O que une as três",
+  "partnersCommonText": "Além da especialidade de cada uma, as três sócias trabalham com a mesma base: a análise da faixa de regulação do sistema nervoso (a chamada janela de tolerância) e a Teoria Polivagal. Na prática, isso significa entender como o corpo de cada pessoa reage a pressão, ameaça e segurança, e usar esse conhecimento para criar ambientes em que as pessoas consigam pensar, decidir e se relacionar melhor."
 }

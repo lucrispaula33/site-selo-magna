@@ -4,11 +4,12 @@ import { pageMeta } from "@/lib/seo";
 import ImageSlot from "@/components/ImageSlot";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ContactSection from "@/components/ContactSection";
-import { Differentials, MissionVisionValues, SeloMeaning, TeamGrid, TrustBar } from "@/components/Sections";
+import { Differentials, MissionVisionValues, SeloMeaning, TrustBar } from "@/components/Sections";
+import Partners from "@/components/Partners";
 
 export const metadata = pageMeta({
   title: "Sobre a Selo Magna: Liderança e Organização Saudável",
-  description: "Conheça a Selo Magna: estratégia, rigor técnico e cuidado com pessoas. Equipe multidisciplinar em psicologia organizacional, segurança do trabalho e liderança.",
+  description: "Conheça a Selo Magna: estratégia, rigor técnico e cuidado com pessoas. Conheça as sócias que unem psicologia, negócios e experiência do colaborador.",
   path: "/sobre",
 });
 
@@ -31,13 +32,7 @@ export default function Sobre() {
         </div>
       </section>
       <TrustBar />
-      <section className="section bg-white">
-        <div className="container">
-          <h2 className="text-4xl md:text-5xl">{sobre.teamTitle}</h2>
-          <p className="lead mt-4">{sobre.teamText}</p>
-          <div className="mt-10"><TeamGrid tone="cream" /></div>
-        </div>
-      </section>
+      <Partners />
       <section className="section">
         <div className="container"><SeloMeaning /></div>
         <div className="container mt-14"><MissionVisionValues /></div>

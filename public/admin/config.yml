@@ -97,6 +97,24 @@ collections:
           - { label: Texto da equipe, name: teamText, widget: text }
           - { label: Título do compromisso ético, name: ethicsTitle, widget: string }
           - { label: Texto do compromisso ético, name: ethicsText, widget: text }
+          - { label: "Sócias: etiqueta", name: partnersEyebrow, widget: string, required: false }
+          - { label: "Sócias: título", name: partnersTitle, widget: string, required: false }
+          - { label: "Sócias: introdução", name: partnersIntro, widget: list, required: false, field: { label: Parágrafo, name: p, widget: text } }
+          - label: Sócias
+            name: partners
+            widget: list
+            required: false
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Nome, name: name, widget: string }
+              - { label: Função na Selo Magna, name: role, widget: string }
+              - { label: Foto (quadrada), name: photo, widget: image }
+              - { label: Capítulo, name: chapter, widget: string, hint: "Ex.: O primeiro passo" }
+              - { label: História, name: story, widget: text, hint: "Deixe uma linha em branco para separar parágrafos." }
+              - { label: Frentes de atuação, name: focus, widget: list, field: { label: Item, name: item, widget: string } }
+              - { label: LinkedIn, name: linkedin, widget: string, required: false }
+          - { label: "Sócias: título do bloco final", name: partnersCommonTitle, widget: string, required: false }
+          - { label: "Sócias: texto do bloco final", name: partnersCommonText, widget: text, required: false }
 
   # ─────────────────────────────── DADOS DA EMPRESA
   - name: empresa
