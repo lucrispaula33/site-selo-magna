@@ -4,7 +4,7 @@ description: "O burnout raramente aparece de repente. Conheça os sinais precoce
 date: "2026-09-15"
 author: "Equipe Selo Magna"
 category: "Burnout"
-cover: "/images/blog-burnout.jpg"
+cover: "/images/blog-burnout-equipe.webp"
 ---
 
 A síndrome de burnout é reconhecida pela OMS como um **fenômeno ocupacional** (CID-11, QD85). Em 2025, o Brasil registrou mais de 546 mil afastamentos por transtornos mentais, um recorde segundo dados do INSS. Antes de chegar ao afastamento, porém, a exaustão dá sinais.

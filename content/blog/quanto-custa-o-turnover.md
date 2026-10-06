@@ -4,7 +4,7 @@ description: "Com 35% de rotatividade, uma empresa de 100 pessoas pode perder ma
 date: "2026-09-22"
 author: "Equipe Selo Magna"
 category: "Turnover"
-cover: "/images/blog-turnover.jpg"
+cover: "/images/hero-escritorio.webp"
 ---
 
 Quando alguém pede demissão, a maioria das empresas enxerga só a rescisão. O custo real é bem maior, e fica espalhado em vários orçamentos.
