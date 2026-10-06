@@ -240,13 +240,26 @@ collections:
             summary: "{{fields.title}}"
             fields:
               - { label: "Endereço da página (não altere)", name: slug, widget: string }
-              - { label: Ícone, name: icon, widget: select, options: [Search, GraduationCap, Settings2, LineChart] }
+              - { label: Ícone, name: icon, widget: select, options: [Search, GraduationCap, Settings2, LineChart, Compass] }
+              - { label: "Etiqueta (ex.: Serviço adicional — deixe vazio nos serviços principais)", name: tag, widget: string, required: false }
               - { label: Nome do serviço, name: title, widget: string }
               - { label: Resumo, name: summary, widget: text }
               - { label: Título no Google, name: metaTitle, widget: string }
               - { label: Descrição no Google, name: metaDescription, widget: text }
               - { label: Para quem é, name: forWhom, widget: text }
-              - { label: O que está incluído, name: deliverables, widget: list, field: { label: Item, name: d, widget: string } }
+              - { label: O que está incluído, name: deliverables, widget: list, required: false, field: { label: Item, name: d, widget: string } }
+              - label: O que está incluído (por tema)
+                name: groups
+                widget: list
+                required: false
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: Tema, name: title, widget: string }
+                  - { label: Itens, name: items, widget: list, field: { label: Item, name: i, widget: string } }
+              - { label: "Título da seção das mentoras (só na mentoria)", name: mentorsTitle, widget: string, required: false }
+              - { label: "Texto da seção das mentoras", name: mentorsText, widget: text, required: false }
+              - { label: "Texto de destaque", name: highlight, widget: text, required: false }
+              - { label: "Tipo de formulário", name: formMode, widget: select, options: [empresa, mentoria], required: false }
               - label: Como funciona (etapas)
                 name: steps
                 widget: list

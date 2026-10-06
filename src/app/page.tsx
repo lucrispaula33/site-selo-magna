@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { site } from "@/config/site";
 import home from "../../content/home.json";
-import { servicos } from "@/content/servicos";
+import { servicosPrincipais, servicosAdicionais } from "@/content/servicos";
 import { getAllPosts, formatDate } from "@/lib/blog";
 import ImageSlot from "@/components/ImageSlot";
 import Icon from "@/components/Icon";
@@ -76,7 +76,7 @@ export default function Home() {
             <Link href="/servicos" className="btn-outline">Ver todos os serviços</Link>
           </div>
           <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-            {servicos.map((s, i) => (
+            {servicosPrincipais.map((s, i) => (
               <Link key={s.slug} href={`/servicos/${s.slug}`} className="card group transition hover:-translate-y-1 hover:shadow-suave">
                 <div className="flex items-center justify-between">
                   <Icon name={s.icon} className="h-8 w-8 text-petroleo-500" />
@@ -88,6 +88,17 @@ export default function Home() {
               </Link>
             ))}
           </div>
+          {servicosAdicionais.map((s) => (
+            <Link key={s.slug} href={`/servicos/${s.slug}`} className="card group mt-5 flex flex-col gap-5 transition hover:shadow-suave md:flex-row md:items-center">
+              <Icon name={s.icon} className="h-8 w-8 shrink-0 text-petroleo-500" />
+              <div className="flex-1">
+                <p className="text-sm font-semibold uppercase tracking-[0.14em] text-petroleo-500">{s.tag}</p>
+                <h3 className="mt-1 text-xl">{s.title}</h3>
+                <p className="mt-2 text-[15px] leading-relaxed text-slate-600">{s.summary}</p>
+              </div>
+              <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-petroleo-500">Saiba mais <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" /></span>
+            </Link>
+          ))}
         </div>
       </section>
 

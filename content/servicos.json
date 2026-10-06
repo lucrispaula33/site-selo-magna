@@ -145,6 +145,89 @@
       ],
       "duration": "Contrato recorrente (mensal)",
       "priceFrom": "Sob consulta"
+    },
+    {
+      "slug": "mentoria-de-carreira",
+      "icon": "Compass",
+      "tag": "Serviço adicional",
+      "title": "Mentoria de Carreira e Liderança",
+      "summary": "Sessões individuais com uma das sócias para planejar a carreira, desenvolver a liderança, mudar de área ou conquistar uma nova oportunidade. Para profissionais e para empresas que querem fortalecer suas lideranças.",
+      "metaTitle": "Mentoria de Carreira e Liderança",
+      "metaDescription": "Mentoria individual para planejamento de carreira, liderança, transição e recolocação profissional. Para profissionais e para empresas que querem desenvolver suas lideranças.",
+      "forWhom": "Profissionais que querem crescer, assumir uma liderança, mudar de área ou voltar ao mercado, e empresas que querem oferecer mentoria individual para seus gestores.",
+      "groups": [
+        {
+          "title": "Carreira e planejamento",
+          "items": [
+            "Planejamento e desenvolvimento de carreira",
+            "Definição de metas profissionais e plano de ação",
+            "Preparação para promoções e crescimento na empresa",
+            "Orientação para negociações salariais e promoções",
+            "Acompanhamento de performance e evolução profissional"
+          ]
+        },
+        {
+          "title": "Liderança",
+          "items": [
+            "Orientação para quem deseja assumir cargos de liderança",
+            "Desenvolvimento de liderança e gestão de equipes",
+            "Gestão de conflitos e comunicação profissional",
+            "Desenvolvimento de inteligência emocional no ambiente de trabalho"
+          ]
+        },
+        {
+          "title": "Transição e recolocação",
+          "items": [
+            "Apoio em processos de mudança ou transição de carreira",
+            "Planejamento para mudança de área ou setor de atuação",
+            "Estratégias para recolocação e conquista de novas oportunidades",
+            "Preparação para processos seletivos internos e externos"
+          ]
+        },
+        {
+          "title": "Currículo, LinkedIn e entrevistas",
+          "items": [
+            "Revisão e otimização de currículo",
+            "Otimização do perfil no LinkedIn",
+            "Preparação para entrevistas de emprego",
+            "Simulação de entrevistas com feedback personalizado",
+            "Orientação para networking estratégico"
+          ]
+        },
+        {
+          "title": "Desenvolvimento e posicionamento",
+          "items": [
+            "Desenvolvimento de competências comportamentais e técnicas",
+            "Desenvolvimento de marca pessoal e posicionamento profissional",
+            "Mentoria para empreendedores e profissionais autônomos"
+          ]
+        }
+      ],
+      "deliverables": [],
+      "mentorsTitle": "Escolha sua mentora",
+      "mentorsText": "Você pode escolher com qual das sócias quer fazer a mentoria, de acordo com o seu objetivo. Se preferir, indicamos a mais adequada para o seu momento.",
+      "highlight": "Nossa missão é ajudar cada profissional a identificar seu potencial, construir uma trajetória sólida e alcançar seus objetivos de carreira, com orientação prática, acompanhamento estratégico e desenvolvimento contínuo. É a mesma visão que guia a Selo Magna: pessoas mais saudáveis e lideranças mais preparadas fazem organizações melhores.",
+      "steps": [
+        {
+          "title": "Conversa inicial",
+          "text": "Entendemos seu momento, seus objetivos e o que você espera da mentoria."
+        },
+        {
+          "title": "Escolha da mentora",
+          "text": "Você escolhe uma das sócias ou indicamos a mais adequada para o seu objetivo."
+        },
+        {
+          "title": "Plano de desenvolvimento",
+          "text": "Definimos metas, prioridades e a frequência das sessões."
+        },
+        {
+          "title": "Sessões e acompanhamento",
+          "text": "Encontros individuais, online ou presenciais, com tarefas práticas e revisão da evolução."
+        }
+      ],
+      "duration": "Sessões individuais, online ou presenciais",
+      "priceFrom": "Sob consulta",
+      "formMode": "mentoria"
     }
   ]
 }

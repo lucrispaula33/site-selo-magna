@@ -4,6 +4,18 @@ import Link from "next/link";
 import { useState } from "react";
 import { pilares } from "@/content/pilares";
 import { site } from "@/config/site";
+import sobre from "../../content/sobre.json";
+
+const objetivosMentoria = [
+  "Planejamento de carreira",
+  "Assumir ou desenvolver uma liderança",
+  "Mudança ou transição de carreira",
+  "Recolocação profissional",
+  "Currículo, LinkedIn e entrevistas",
+  "Promoção e crescimento na empresa",
+  "Empreender ou atuar como autônomo",
+  "Outro objetivo",
+];
 
 /**
  * Formulário de contato:
@@ -11,13 +23,15 @@ import { site } from "@/config/site";
  * 2) abre o WhatsApp com a mensagem pronta;
  * 3) leva o visitante para a página /obrigado (usada para medir conversões).
  */
-export default function LeadForm({ defaultChallenge, origem = "contato" }: { defaultChallenge?: string; origem?: string }) {
+export default function LeadForm({ defaultChallenge, origem = "contato", mode = "empresa" }: { defaultChallenge?: string; origem?: string; mode?: "empresa" | "mentoria" }) {
+  const mentoria = mode === "mentoria";
   const router = useRouter();
   const [sending, setSending] = useState(false);
 
   function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const f = Object.fromEntries(new FormData(e.currentTarget)) as Record<string, string>;
+    if (mentoria && f.mentora) f.mensagem = [`Mentora de preferência: ${f.mentora}`, f.mensagem].filter(Boolean).join("\n");
     setSending(true);
 
     fetch("/api/lead", {
@@ -27,7 +41,15 @@ export default function LeadForm({ defaultChallenge, origem = "contato" }: { def
       keepalive: true,
     }).catch(() => {});
 
-    const msg = [
+    const msg = mentoria ? [
+      `Olá, equipe ${site.name}! Vim pelo site e quero agendar uma mentoria.`,
+      `*Nome:* ${f.nome}`,
+      `*E-mail:* ${f.email}`,
+      `*Perfil:* ${f.colaboradores}`,
+      f.empresa ? `*Empresa:* ${f.empresa}` : "",
+      `*Objetivo:* ${f.desafio}`,
+      f.mensagem ? `*Mensagem:* ${f.mensagem}` : "",
+    ].filter(Boolean).join("\n") : [
       `Olá, equipe ${site.name}! Vim pelo site.`,
       `*Nome:* ${f.nome}`,
       `*E-mail:* ${f.email}`,
@@ -49,14 +71,39 @@ export default function LeadForm({ defaultChallenge, origem = "contato" }: { def
           <input id="nome" name="nome" required autoComplete="name" placeholder="Seu nome" className="field" />
         </div>
         <div>
-          <label htmlFor="email" className="label">E-mail corporativo</label>
-          <input id="email" name="email" type="email" required autoComplete="email" placeholder="voce@empresa.com.br" className="field" />
+          <label htmlFor="email" className="label">{mentoria ? "E-mail" : "E-mail corporativo"}</label>
+          <input id="email" name="email" type="email" required autoComplete="email" placeholder={mentoria ? "voce@email.com" : "voce@empresa.com.br"} className="field" />
         </div>
         <div>
-          <label htmlFor="empresa" className="label">Empresa</label>
-          <input id="empresa" name="empresa" required autoComplete="organization" placeholder="Nome da empresa" className="field" />
+          <label htmlFor="empresa" className="label">{mentoria ? "Empresa (opcional)" : "Empresa"}</label>
+          <input id="empresa" name="empresa" required={!mentoria} autoComplete="organization" placeholder={mentoria ? "Se a mentoria for pela empresa" : "Nome da empresa"} className="field" />
         </div>
-        <div>
+        {mentoria ? (
+          <>
+            <div>
+              <label htmlFor="colaboradores" className="label">Você é</label>
+              <select id="colaboradores" name="colaboradores" className="field" defaultValue="Profissional (pessoa física)">
+                <option>Profissional (pessoa física)</option>
+                <option>Empresa (mentoria para lideranças)</option>
+              </select>
+            </div>
+            <div>
+              <label htmlFor="desafio" className="label">Objetivo principal</label>
+              <select id="desafio" name="desafio" className="field" defaultValue={objetivosMentoria[0]}>
+                {objetivosMentoria.map((o) => <option key={o}>{o}</option>)}
+              </select>
+            </div>
+            <div>
+              <label htmlFor="mentora" className="label">Mentora de preferência</label>
+              <select id="mentora" name="mentora" className="field" defaultValue="Sem preferência">
+                <option>Sem preferência</option>
+                {sobre.partners.map((p) => <option key={p.name}>{p.name}</option>)}
+              </select>
+            </div>
+          </>
+        ) : (
+          <>
+            <div>
           <label htmlFor="colaboradores" className="label">Número de colaboradores</label>
           <select id="colaboradores" name="colaboradores" className="field" defaultValue="Até 50 colaboradores">
             <option>Até 50 colaboradores</option>
@@ -74,9 +121,11 @@ export default function LeadForm({ defaultChallenge, origem = "contato" }: { def
             <option>Ainda não sei — quero um diagnóstico</option>
           </select>
         </div>
+          </>
+        )}
         <div className="sm:col-span-2">
           <label htmlFor="mensagem" className="label">Mensagem (opcional)</label>
-          <textarea id="mensagem" name="mensagem" rows={3} placeholder="Conte um pouco do contexto da sua empresa" className="field" />
+          <textarea id="mensagem" name="mensagem" rows={3} placeholder={mentoria ? "Conte um pouco do seu momento profissional" : "Conte um pouco do contexto da sua empresa"} className="field" />
         </div>
         <label className="flex items-start gap-3 text-sm text-slate-600 sm:col-span-2">
           <input type="checkbox" name="consent" required className="mt-1 h-4 w-4 accent-petroleo-700" />

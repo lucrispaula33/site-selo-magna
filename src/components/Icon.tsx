@@ -1,6 +1,6 @@
-import { BatteryLow, BookOpen, ClipboardCheck, Flame, GraduationCap, HeartPulse, LineChart, Scale, Search, Settings2, Users, type LucideProps } from "lucide-react";
+import { BatteryLow, BookOpen, ClipboardCheck, Compass, Flame, GraduationCap, HeartPulse, LineChart, Scale, Search, Settings2, Users, type LucideProps } from "lucide-react";
 
-const map = { Flame, HeartPulse, Users, ClipboardCheck, Scale, BatteryLow, BookOpen, Search, GraduationCap, Settings2, LineChart };
+const map = { Flame, HeartPulse, Users, ClipboardCheck, Scale, BatteryLow, BookOpen, Search, GraduationCap, Settings2, LineChart, Compass };
 export type IconName = keyof typeof map;
 
 export default function Icon({ name, ...props }: { name: IconName } & LucideProps) {
