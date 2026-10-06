@@ -7,11 +7,11 @@ export const metadata = pageMeta({ title: "Política de Privacidade", descriptio
 // Modelo inicial. Recomenda-se revisão por um advogado antes da publicação definitiva.
 export default function Privacidade() {
   return (
-    <LegalPage title="Política de Privacidade" path="/politica-de-privacidade" updated="29 de setembro de 2026">
+    <LegalPage title="Política de Privacidade" path="/politica-de-privacidade" updated="6 de outubro de 2026">
       <p>A {site.legalName} (“{site.name}”), inscrita no CNPJ {site.cnpj}, respeita a sua privacidade. Esta política explica como tratamos dados pessoais em nosso site, conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD).</p>
       <h2>1. Quais dados coletamos</h2>
       <ul>
-        <li><strong>Dados que você informa:</strong> nome, e-mail corporativo, empresa, número de colaboradores, principal desafio e mensagem, quando preenche nossos formulários.</li>
+        <li><strong>Dados que você informa:</strong> nome, e-mail corporativo, empresa, número de colaboradores, principal desafio e mensagem, quando preenche nossos formulários, e as mensagens que você envia pelo chat do site.</li>
         <li><strong>Dados de navegação:</strong> páginas visitadas, tipo de dispositivo e origem do acesso, coletados por cookies de análise apenas se você aceitar.</li>
       </ul>
       <p>Não coletamos dados de saúde pelo site. Dados de diagnósticos realizados em empresas clientes são tratados em contrato específico, de forma agregada e sob sigilo profissional.</p>
@@ -22,7 +22,7 @@ export default function Privacidade() {
         <li>Medir a audiência e melhorar o site (consentimento via aviso de cookies).</li>
       </ul>
       <h2>3. Compartilhamento</h2>
-      <p>Compartilhamos dados apenas com fornecedores necessários à operação, como hospedagem (Netlify), envio de e-mails (Brevo), mensagens (WhatsApp/Meta) e análise de audiência (Google Analytics). Não vendemos dados pessoais.</p>
+      <p>Compartilhamos dados apenas com fornecedores necessários à operação, como hospedagem (Netlify), envio de e-mails (Brevo), mensagens (WhatsApp/Meta), chat de atendimento (tawk.to) e análise de audiência (Google Analytics). Não vendemos dados pessoais.</p>
       <h2>4. Por quanto tempo guardamos</h2>
       <p>Pelo tempo necessário às finalidades acima ou até você pedir a exclusão, respeitadas as obrigações legais.</p>
       <h2>5. Seus direitos</h2>

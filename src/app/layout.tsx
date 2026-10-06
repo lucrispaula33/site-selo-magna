@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import CookieConsent from "@/components/CookieConsent";
+import TawkChat from "@/components/TawkChat";
 import JsonLd from "@/components/JsonLd";
 import { site } from "@/config/site";
 
@@ -54,6 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <WhatsAppFloat />
         <CookieConsent />
+        <TawkChat />
       </body>
     </html>
   );
