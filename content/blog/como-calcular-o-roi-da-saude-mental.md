@@ -4,7 +4,7 @@ description: "Número é a linguagem do negócio. Veja como transformar ganhos e
 date: "2026-10-06"
 author: "Equipe Selo Magna"
 category: "ROI"
-cover: "/images/design-sem-nome-80-.jpg"
+cover: "/images/blog-roi-reuniao.webp"
 ---
 
 Programas de saúde mental costumam perder espaço no orçamento por um motivo simples: **ninguém mostrou o retorno em números**. E número é a linguagem do negócio.
