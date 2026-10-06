@@ -6,7 +6,7 @@ description: A fiscalização dos riscos psicossociais no PGR começou em 26 de
 date: 2026-09-29
 author: Equipe Selo Magna
 category: NR-1
-cover: /images/foto-iv.jpeg
+cover: /images/imagem-mulheres-conversando-reunião-saude-mental.jpg
 ---
 
 A atualização da **NR-1**, feita pela Portaria MTE nº 1.419/2024, incluiu os **fatores de risco psicossociais relacionados ao trabalho** no Gerenciamento de Riscos Ocupacionais (GRO). Na prática, eles passam a fazer parte do **PGR** da empresa, ao lado dos riscos físicos, químicos, biológicos, ergonômicos e de acidentes.
