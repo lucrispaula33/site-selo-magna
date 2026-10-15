@@ -42,7 +42,7 @@ export function readPost(slug: string): Post | null {
     slug,
     title: String(data.title ?? slug),
     description: String(data.description ?? ""),
-    date: String(data.date ?? ""),
+    date: data.date instanceof Date ? data.date.toISOString().slice(0, 10) : String(data.date ?? ""),
     author: String(data.author ?? "Equipe Selo Magna"),
     category: String(data.category ?? "Artigos"),
     cover: data.cover ? String(data.cover) : undefined,
