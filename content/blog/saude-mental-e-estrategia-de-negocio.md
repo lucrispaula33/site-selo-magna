@@ -4,7 +4,7 @@ description: "Rotatividade, produtividade, reputação e inovação dependem de 
 date: "2026-10-06"
 author: "Equipe Selo Magna"
 category: "Estratégia"
-cover: "/images/hero-escritorio.webp"
+cover: "/images/blog-estrategia-lideranca.webp"
 ---
 
 Em muitas empresas, saúde mental ainda é tratada como assunto do RH: uma palestra em setembro, um aplicativo de meditação, um benefício a mais. Bem-intencionado, mas desconectado do negócio.
