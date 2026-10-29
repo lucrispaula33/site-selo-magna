@@ -69,7 +69,7 @@ export function CostSilence() {
         <div className="grid items-center gap-10 rounded-4xl border border-areia-300/70 bg-white p-8 shadow-suave md:p-14 lg:grid-cols-2">
           <div>
             <p className="eyebrow">O custo do silêncio</p>
-            <h2 className="mt-4 text-4xl md:text-5xl">Problemas de saúde mental não diagnosticados têm preço — e ele é alto.</h2>
+            <h2 className="mt-4 text-4xl md:text-5xl">Problemas de saúde mental não diagnosticados têm preço, e ele é alto.</h2>
             <p className="lead mt-6">
               Somando os sete problemas mapeados pela {site.name}, uma empresa de até {defaultScenario.employees} colaboradores com{" "}
               {defaultScenario.turnover * 100}% de turnover pode perder cerca de {brlShort(total).replace("R$ ", "R$ ")} por ano em custos
