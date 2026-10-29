@@ -27,7 +27,7 @@ export default function Sobre() {
                 <p key={i} className={`lead ${i === 0 ? "mt-7" : "mt-5"}`}>{p}</p>
               ))}
             </div>
-            <ImageSlot src={site.images.about} alt="Equipe em reunião de trabalho, conversando sobre indicadores" className="aspect-[16/10]" priority />
+            <ImageSlot src={site.images.about} alt="Luana de Paula e Maria Fernanda Ribeiro Toledo, sócias da Selo Magna, em evento de experiência do cliente" className="aspect-[16/10]" priority />
           </div>
         </div>
       </section>
