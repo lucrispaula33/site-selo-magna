@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { site } from "@/config/site";
 
-export const alt = `${site.name} — ${site.tagline}`;
+export const alt = `${site.name}: ${site.tagline}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -16,7 +16,7 @@ export default function OG() {
           </div>
           <div style={{ fontSize: 40, fontWeight: 700 }}>{site.name}</div>
         </div>
-        <div style={{ fontSize: 68, lineHeight: 1.1, fontWeight: 700, maxWidth: 950 }}>O que sua empresa perde em silêncio tem nome — e tem solução.</div>
+        <div style={{ fontSize: 68, lineHeight: 1.1, fontWeight: 700, maxWidth: 950 }}>O que sua empresa perde em silêncio tem nome e tem solução.</div>
         <div style={{ fontSize: 26, color: "#6FB2B2", letterSpacing: 3 }}>SOLUÇÃO ESTRATÉGICA EM LIDERANÇA E ORGANIZAÇÃO SAUDÁVEL</div>
       </div>
     ),
