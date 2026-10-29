@@ -4,7 +4,7 @@ import { servicosPrincipais, servicosAdicionais } from "@/content/servicos";
 import { pageMeta } from "@/lib/seo";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ContactSection from "@/components/ContactSection";
-import Icon from "@/components/Icon";
+import Icon from "@/components/Icon"; import ImageSlot from "@/components/ImageSlot";
 
 export const metadata = pageMeta({
   title: "Serviços: Diagnóstico, Treinamentos e NR-1",
@@ -20,7 +20,7 @@ export default function Servicos() {
           <Breadcrumbs items={[{ label: "Serviços", href: "/servicos" }]} />
           <h1 className="mt-8 max-w-4xl text-5xl leading-[1.05] md:text-6xl">Soluções completas, do diagnóstico ao acompanhamento contínuo.</h1>
           <p className="lead mt-6 max-w-2xl">Contrate uma etapa ou a jornada completa. Todas as entregas têm indicadores, responsáveis e evidências auditáveis.</p>
-          <div className="mt-14 grid gap-6 md:grid-cols-2">
+          <div className="mt-12 grid items-center gap-10 md:grid-cols-[1.1fr_1fr]"><ImageSlot src="/images/mapa-servicos.webp" alt="Mapa de serviços da Selo Magna: diagnóstico psicossocial e plano de ação, inventário para o PGR com segurança do trabalho, Programa Selo Magna, preparação para selos de saúde mental, desenvolvimento de lideranças, mentoria de carreira e liderança, prevenção ao assédio e transição da jornada 5x2" className="aspect-square" sizes="(min-width: 768px) 55vw, 100vw" /><div><p className="text-sm font-semibold uppercase tracking-[0.14em] text-petroleo-500">Mapa de serviços</p><h2 className="mt-3 text-3xl md:text-4xl">Tudo o que fazemos, em um só lugar</h2><p className="mt-4 leading-relaxed text-slate-600">No centro, a Selo Magna. Ao redor, as frentes que a sua empresa pode contratar juntas ou separadas: do diagnóstico psicossocial e do inventário para o PGR, assinados por psicóloga e por profissional de segurança do trabalho, à preparação para selos de saúde mental, desenvolvimento de lideranças, mentoria, prevenção ao assédio e transição para a jornada 5x2.</p><p className="mt-4 leading-relaxed text-slate-600">Você escolhe por onde começar. Nós ajudamos a montar a ordem certa para a realidade da sua empresa.</p><Link href="/contato#formulario" className="mt-6 inline-flex items-center gap-2 font-semibold text-petroleo-500">Agende uma conversa de 30 minutos <ArrowRight className="h-4 w-4" /></Link></div></div><div className="mt-14 grid gap-6 md:grid-cols-2">
             {servicosPrincipais.map((s, i) => (
               <Link key={s.slug} href={`/servicos/${s.slug}`} className="card group flex flex-col transition hover:shadow-suave md:p-10">
                 <div className="flex items-center justify-between">
