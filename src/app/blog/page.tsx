@@ -17,7 +17,7 @@ export default function Blog() {
       <div className="container">
         <Breadcrumbs items={[{ label: "Blog", href: "/blog" }]} />
         <h1 className="mt-8 text-5xl md:text-6xl">Conteúdos para líderes e RH</h1>
-        <p className="lead mt-5 max-w-2xl">NR-1, riscos psicossociais, indicadores e liderança saudável — explicados de forma prática.</p>
+        <p className="lead mt-5 max-w-2xl">NR-1, riscos psicossociais, indicadores e liderança saudável, explicados de forma prática.</p>
         <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {posts.map((p) => (
             <article key={p.slug} className="group">
