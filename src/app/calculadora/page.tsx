@@ -21,7 +21,7 @@ export default function Calculadora() {
           <div className="mt-12"><Calculator /></div>
         </div>
       </section>
-      <ContactSection title="Transforme a estimativa em um diagnóstico real" origem="calculadora" defaultChallenge="Ainda não sei — quero um diagnóstico" />
+      <ContactSection title="Transforme a estimativa em um diagnóstico real" origem="calculadora" defaultChallenge="Ainda não sei, quero um diagnóstico" />
     </>
   );
 }
