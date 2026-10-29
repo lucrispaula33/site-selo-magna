@@ -11,7 +11,7 @@ Toda geração de trabalhadores teve a sua luta. Algumas ficaram nos livros de h
 
 O psiquiatra e psicanalista francês **Christophe Dejours**, em *A Loucura do Trabalho*, descreveu esse caminho em três grandes etapas. Cada uma nasceu de uma dor diferente e terminou do mesmo jeito: as empresas mudaram e todos ganharam com isso.
 
-![Infográfico: as três lutas dos trabalhadores — jornada, corpo e mente — e o que a empresa ganha ao investir em saúde mental](/images/infografico-tres-lutas.webp)
+![Infográfico: as três lutas dos trabalhadores (jornada, corpo e mente) e o que a empresa ganha ao investir em saúde mental](/images/infografico-tres-lutas.webp)
 
 ## A primeira luta: pela sobrevivência
 
