@@ -8,7 +8,7 @@ export const metadata = pageMeta({ title: "Política de Privacidade", descriptio
 export default function Privacidade() {
   return (
     <LegalPage title="Política de Privacidade" path="/politica-de-privacidade" updated="6 de outubro de 2026">
-      <p>A {site.legalName} (“{site.name}”), inscrita no CNPJ {site.cnpj}, respeita a sua privacidade. Esta política explica como tratamos dados pessoais em nosso site, conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD).</p>
+      <p>A {site.legalName} (“{site.name}”){site.cnpj ? `, inscrita no CNPJ ${site.cnpj},` : ""} respeita a sua privacidade. Esta política explica como tratamos dados pessoais em nosso site, conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD).</p>
       <h2>1. Quais dados coletamos</h2>
       <ul>
         <li><strong>Dados que você informa:</strong> nome, e-mail corporativo, empresa, número de colaboradores, principal desafio e mensagem, quando preenche nossos formulários, e as mensagens que você envia pelo chat do site.</li>
