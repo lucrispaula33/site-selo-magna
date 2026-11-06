@@ -54,7 +54,7 @@ export default function Footer() {
       </div>
       <div className="border-t border-white/10">
         <div className="container flex flex-col gap-3 py-6 text-xs text-slate-500 md:flex-row md:items-center md:justify-between">
-          <p>© {new Date().getFullYear()} {site.legalName} · CNPJ {site.cnpj}</p>
+          <p>© {new Date().getFullYear()} {site.legalName}{site.cnpj ? ` · CNPJ ${site.cnpj}` : ""}</p>
           <div className="flex gap-5">
             <Link href="/politica-de-privacidade" className="hover:text-white">Política de Privacidade</Link>
             <Link href="/termos-de-uso" className="hover:text-white">Termos de Uso</Link>
