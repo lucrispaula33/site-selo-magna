@@ -11,7 +11,7 @@
   "team": {
     "eyebrow": "Quem trabalha na Selo Magna",
     "title": "Uma equipe multidisciplinar para um problema multidimensional.",
-    "text": "Riscos psicossociais não se resolvem com uma única especialidade. A Selo Magna combina psicologia organizacional, segurança do trabalho, desenvolvimento de lideranças e análise de indicadores, com a relação custo-benefício em cada recomendação e foco na melhoria contínua do dia a dia."
+    "text": "Riscos psicossociais não se resolvem com uma única especialidade. A Selo Magna integra conhecimentos de psicologia organizacional, segurança do trabalho, desenvolvimento de lideranças e análise de indicadores, buscando soluções com equilíbrio entre investimento, impacto e resultados, sempre com foco na melhoria contínua."
   },
   "services": {
     "eyebrow": "Como trabalhamos",
@@ -27,6 +27,12 @@
   "contact": {
     "title": "Vamos conversar sobre a sua organização?",
     "text": "Conte o cenário da sua empresa e receba uma proposta de diagnóstico com indicadores claros e plano de ação personalizado.",
-    "note": "Nossa abordagem não é apenas sobre bem-estar: é sobre continuidade do negócio, indicadores auditáveis e segurança jurídica."
+    "note": "Nossa abordagem não é apenas sobre bem-estar: é sobre continuidade do negócio, indicadores auditáveis e segurança jurídica.",
+    "notes": {
+      "nr-1": "Diagnóstico com método validado, inventário assinado e plano de ação com responsáveis e prazos: o que a NR-1 pede para os riscos psicossociais.",
+      "calculadora": "A calculadora mostra uma estimativa. O diagnóstico mostra os números reais da sua empresa e por onde começar.",
+      "servicos": "Cada serviço pode ser contratado separadamente ou em conjunto, conforme o momento da sua empresa.",
+      "sobre": "Psicologia, gestão de pessoas e negócios no mesmo time, com método e responsabilidade técnica."
+    }
   }
 }
