@@ -16,7 +16,7 @@ export default function Pilares() {
         <div className="container">
           <Breadcrumbs items={[{ label: "Pilares", href: "/pilares" }]} />
           <h1 className="mt-8 max-w-4xl text-5xl leading-[1.05] md:text-6xl">Os 7 riscos invisíveis que consomem os resultados da sua empresa.</h1>
-          <p className="lead mt-6 max-w-2xl">Cada pilar mostra os sinais de alerta, o custo estimado para uma empresa de até 100 colaboradores com 35% de turnover e como a Selo Magna atua.</p>
+          <p className="lead mt-6 max-w-2xl">Cada pilar apresenta os principais sinais de alerta, os custos estimados para uma empresa com até 100 colaboradores e taxa de turnover de 35%, além das soluções propostas pela Selo Magna.</p>
         </div>
       </section>
       <PillarsGrid title="Escolha o desafio mais urgente para a sua empresa." />
