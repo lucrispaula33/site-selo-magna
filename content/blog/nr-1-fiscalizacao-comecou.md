@@ -7,7 +7,7 @@ category: "NR-1"
 cover: "/images/sobre-reuniao.webp"
 ---
 
-A atualização da NR-1 pela Portaria MTE nº 1.419/2024 incluiu os **fatores de risco psicossociais** no Gerenciamento de Riscos Ocupacionais. Depois de um ano de caráter educativo, a fiscalização com possibilidade de autuação começou em **26 de maio de 2026**.
+A atualização da NR-1 pela Portaria MTE nº 1.419/2024 incluiu os **fatores de risco psicossociais** no Gerenciamento de Riscos Ocupacionais. Após o período de orientação educativa, a fiscalização com possibilidade de autuação começou em **26 de maio de 2026**.
 
 Ou seja: não é mais uma tendência ou uma boa prática. É uma obrigação, e já está valendo. Explicamos a norma em detalhe em [NR-1 e riscos psicossociais: o que sua empresa precisa fazer agora](/blog/nr-1-riscos-psicossociais-o-que-muda).
 
