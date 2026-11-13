@@ -28,7 +28,7 @@ export default function Contato() {
         <div className="container">
           <Breadcrumbs items={[{ label: "Contato", href: "/contato" }]} />
           <h1 className="mt-8 max-w-3xl text-5xl leading-[1.05] md:text-6xl">Fale com um especialista</h1>
-          <p className="lead mt-5 max-w-2xl">Respondemos em até 1 dia útil. {site.contact.serviceArea}.</p>
+          <p className="lead mt-5 max-w-2xl">Retornamos em até um dia útil. {site.contact.serviceArea}.</p>
           <div className={`mt-12 grid gap-8 ${hasMap ? "lg:grid-cols-2" : ""}`}>
             <ul className={`grid gap-4 sm:grid-cols-2 ${hasMap ? "" : "lg:grid-cols-3"}`}>
               {items.map(({ icon: I, label, value, href }) => (
