@@ -11,7 +11,7 @@ cover: /images/imagem-mulheres-conversando-reunião-saude-mental.jpg
 
 A atualização da **NR-1**, feita pela Portaria MTE nº 1.419/2024, incluiu os **fatores de risco psicossociais relacionados ao trabalho** no Gerenciamento de Riscos Ocupacionais (GRO). Na prática, eles passam a fazer parte do **PGR** da empresa, ao lado dos riscos físicos, químicos, biológicos, ergonômicos e de acidentes.
 
-Depois de um ano com caráter educativo, a fiscalização com possibilidade de autuação começou em **26 de maio de 2026**.
+Após o período de orientação educativa, a fiscalização com possibilidade de autuação começou em **26 de maio de 2026**.
 
 ## O que são riscos psicossociais?
 
