@@ -17,7 +17,7 @@ export default function ContactSection({
           <p className="mt-6 text-lg leading-relaxed text-slate-300">{text}</p>
           {mode === "empresa" && (
             <div className="mt-10 rounded-2xl border border-white/10 bg-white/5 p-6 text-slate-200">
-              {home.contact.note}
+              {(home.contact.notes as Record<string, string>)[origem ?? ""] ?? home.contact.note}
             </div>
           )}
           <a href={whatsappLink()} target="_blank" rel="noopener" className="btn-whats mt-10" data-track="whatsapp_secao">
