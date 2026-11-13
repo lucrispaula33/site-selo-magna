@@ -34,8 +34,8 @@ export default function NR1() {
               <span className="inline-block rounded-full border border-white/15 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-petroleo-300">Fiscalização desde 26/05/2026</span>
               <h1 className="mt-6 text-5xl leading-[1.05] text-white md:text-6xl">NR-1 e riscos psicossociais: sua empresa está pronta para a fiscalização?</h1>
               <p className="mt-6 text-lg leading-relaxed text-slate-300">
-                A Portaria MTE nº 1.419/2024 incluiu os fatores de risco psicossociais no Gerenciamento de Riscos Ocupacionais. Depois de um ano
-                de caráter educativo, a fiscalização com possibilidade de autuação está valendo. A Selo Magna faz a adequação completa, com gestão
+                A Portaria MTE nº 1.419/2024 incluiu os fatores de risco psicossociais no Gerenciamento de Riscos Ocupacionais. Após o período
+                inicial de orientação educativa, a fiscalização passou a prever autuações em caso de descumprimento. A Selo Magna faz a adequação completa, com gestão
                 auditável e usando a ISO 45003 como referência.
               </p>
               <div className="mt-9 flex flex-wrap gap-3">
