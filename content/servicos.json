@@ -147,6 +147,45 @@
       "priceFrom": "Sob consulta"
     },
     {
+      "slug": "recrutamento-e-selecao",
+      "icon": "Users",
+      "tag": "Serviço adicional",
+      "title": "Recrutamento e Seleção",
+      "summary": "Conduzimos o processo seletivo da sua empresa, do perfil da vaga à lista final de candidatos, com critérios claros e foco no que a função realmente exige.",
+      "metaTitle": "Recrutamento e Seleção por Perfil de Sucesso da Função",
+      "metaDescription": "Recrutamento e seleção para pequenas e médias empresas: perfil da vaga, divulgação, triagem, entrevistas por competências e lista final para a decisão do gestor.",
+      "forWhom": "Pequenas e médias empresas, com ou sem RH estruturado, que precisam contratar com mais critério e não têm tempo ou equipe para conduzir todo o processo.",
+      "deliverables": [
+        "Perfil de sucesso da vaga, construído com o gestor (comportamentos e competências)",
+        "Descrição e anúncio da vaga",
+        "Divulgação e busca ativa de candidatos",
+        "Triagem de currículos pelos critérios combinados",
+        "Entrevistas por competências",
+        "Lista final de candidatos com parecer para a decisão do gestor"
+      ],
+      "highlight": "Nosso critério é o perfil de sucesso da função: os comportamentos e as competências que a vaga exige. Processos transparentes, sem discriminação de qualquer natureza e em linha com a legislação.",
+      "steps": [
+        {
+          "title": "Perfil da vaga",
+          "text": "Definimos com o gestor as entregas, os comportamentos e as competências que a função exige."
+        },
+        {
+          "title": "Divulgação e triagem",
+          "text": "Anunciamos a vaga, fazemos busca ativa e triamos os currículos pelos critérios combinados."
+        },
+        {
+          "title": "Entrevistas",
+          "text": "Entrevistas por competências com os candidatos mais aderentes ao perfil."
+        },
+        {
+          "title": "Lista final",
+          "text": "Apresentamos os finalistas com um parecer sobre cada um. A decisão final é do gestor."
+        }
+      ],
+      "duration": "Prazo combinado por vaga",
+      "priceFrom": "Sob consulta"
+    },
+    {
       "slug": "mentoria-de-carreira",
       "icon": "Compass",
       "tag": "Serviço adicional",
