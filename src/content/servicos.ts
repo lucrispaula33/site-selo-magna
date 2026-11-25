@@ -5,7 +5,7 @@ import data from "../../content/servicos.json";
 
 export type Servico = {
   slug: string;
-  icon: "Search" | "GraduationCap" | "Settings2" | "LineChart" | "Compass";
+  icon: "Search" | "GraduationCap" | "Settings2" | "LineChart" | "Compass" | "Users";
   /** Ex.: "Serviço adicional". Serviços com tag aparecem separados da jornada principal. */
   tag?: string;
   title: string;
