@@ -13,6 +13,13 @@ import sobre from "../../../../content/sobre.json";
 
 type Props = { params: Promise<{ slug: string }> };
 
+const formPorServico: Record<string, { text: string; challenge: string }> = {
+  "recrutamento-e-selecao": {
+    text: "Conte qual vaga você precisa preencher e o momento da sua empresa. Retornamos com uma proposta personalizada.",
+    challenge: "Recrutamento e Seleção",
+  },
+};
+
 export function generateStaticParams() {
   return servicos.map((s) => ({ slug: s.slug }));
 }
@@ -107,7 +114,7 @@ export default async function ServicoPage({ params }: Props) {
           mode="mentoria"
         />
       ) : (
-        <ContactSection title="Solicite uma proposta personalizada" origem={`servico-${s.slug}`} />
+        <ContactSection title="Solicite uma proposta personalizada" text={formPorServico[s.slug]?.text} defaultChallenge={formPorServico[s.slug]?.challenge} origem={`servico-${s.slug}`} />
       )}
       <JsonLd data={{ "@context": "https://schema.org", "@type": "Service", name: s.title, description: s.metaDescription, provider: { "@id": `${site.url}/#empresa` }, areaServed: "BR", url: `${site.url}/servicos/${s.slug}` }} />
     </>
