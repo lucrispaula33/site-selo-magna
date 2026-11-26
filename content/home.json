@@ -27,12 +27,13 @@
   "contact": {
     "title": "Vamos conversar sobre a sua organização?",
     "text": "Compartilhe os desafios da sua empresa e receba uma proposta de diagnóstico, com indicadores claros e um plano de ação personalizado.",
-    "note": "Nossa abordagem vai além do bem-estar: integra a saúde psicossocial à continuidade dos negócios, à gestão por indicadores e à segurança jurídica.",
+    "note": "Nossa abordagem vai além do bem-estar: integra a saúde psicossocial à continuidade dos negócios e à gestão por indicadores.",
     "notes": {
       "nr-1": "Diagnóstico com método validado, inventário assinado e plano de ação com responsáveis e prazos: o que a NR-1 pede para os riscos psicossociais.",
       "calculadora": "A calculadora mostra uma estimativa. O diagnóstico mostra os números reais da sua empresa e por onde começar.",
       "servicos": "Cada serviço pode ser contratado separadamente ou em conjunto, conforme o momento da sua empresa.",
-      "sobre": "Psicologia, gestão de pessoas e negócios no mesmo time, com método e responsabilidade técnica."
+      "sobre": "Psicologia, gestão de pessoas e negócios no mesmo time, com método e responsabilidade técnica.",
+      "servico-recrutamento-e-selecao": "Conduzimos o processo inteiro ou apoiamos o seu RH só nas etapas que ele escolher."
     }
   }
 }
