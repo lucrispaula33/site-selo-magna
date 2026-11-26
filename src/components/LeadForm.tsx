@@ -117,6 +117,7 @@ export default function LeadForm({ defaultChallenge, origem = "contato", mode = 
           <label htmlFor="desafio" className="label">Principal desafio hoje</label>
           <select id="desafio" name="desafio" className="field" defaultValue={defaultChallenge ?? pilares[0].short}>
             {pilares.map((p) => <option key={p.slug}>{p.short}</option>)}
+            <option>Recrutamento e Seleção</option>
             <option>Adequação à NR-1</option>
             <option>Quero ser reconhecida como referência</option>
             <option>Ainda não sei, quero um diagnóstico</option>
